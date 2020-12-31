@@ -1,0 +1,307 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebf0ee;
+    width: 1440px;
+}
+
+.container {
+    width: 100%;
+    background: #149777;
+    margin-bottom: 1em;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+i {
+    font-size: 20px;
+    align-items: center;
+}
+
+i:hover {
+    color: lightgreen;
+}
+
+nav a {
+    margin: .5em;
+    color: white;
+}
+
+nav a span {
+    margin: .5em;
+}
+
+button {
+    background-color: #ffc800;
+    padding: .8em;
+    border-radius: .5em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left {
+    left: -40px;
+}
+
+.carousel_button--right {
+    right: -40px;
+}
+
+.carousel_button img {
+    width: 12px;
+}
+
+.carousel_nav {
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+    background: rgba(0, 0, 0, .75);
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+/* Listings */
+
+#container {
+    transform: translate(0%);
+    margin-top: 5rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.listing {
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid #d4ded9;
+    width: 600px;
+    max-width: 90%;
+    padding: .5em;
+}
+
+.listing:hover {
+    border: 2px solid #91b4a3;
+}
+
+img {
+    width: 100px;
+}
+
+#container a {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+
+.info {
+    margin-left: 1rem;
+    color: black;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+}
+
+.heading {
+    font-weight: 900;
+}
+
+.price {
+    color: #73e298;
+}
+
+.one {
+    padding: 65px;
+    background-image: url(../images/apt1.jpg);
+    background-size: cover;
+}
+
+.two {
+    padding: 65px;
+    background-image: url(../images/apt2.jpeg);
+    background-size: cover;
+}
+
+.three {
+    padding: 65px;
+    background-image: url(../images/apt3.jpeg);
+    background-size: cover;
+}
+
+.four {
+    padding: 65px;
+    background-image: url(../images/apt4.jpeg);
+    background-size: cover;
+}
+
+.five {
+    padding: 65px;
+    background-image: url(../images/apt5.jpeg);
+    background-size: cover;
+}
+
+.six {
+    padding: 65px;
+    background-image: url(../images/apt6.jpeg);
+    background-size: cover;
+}
+
+.seven {
+    padding: 65px;
+    background-image: url(../images/land1.jpeg);
+    background-size: cover;
+}
+
+.eight {
+    padding: 65px;
+    background-image: url(../images/land2.jpeg);
+    background-size: cover;
+}
+
+.nine {
+    padding: 65px;
+    background-image: url(../images/shop1.jpeg);
+    background-size: cover;
+}
+
+.ten {
+    padding: 65px;
+    background-image: url(../images/shop2.jpeg);
+    background-size: cover;
+}
+
+
+/* newsletter */
+
+#newsletter {
+    background-color: white;
+    display: flex;
+    padding: 3rem;
+    border-top: 2px solid #149777;
+}
+
+.socialmedia img {
+    width: 25px;
+}
+
+.sign-up {
+    margin-left: 200px;
+}
+
+.play i {
+    font-size: 30px;
+    color: white;
+}
+
+.app i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#footer {
+    text-align: center;
+}
+
+input {
+    padding: 1em;
+    border-radius: 1rem;
+    background-color: #f3f6f5;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: #73e298;
+    padding: 1rem;
+}
+
+button.app {
+    color: white;
+    background-color: black;
+}
+
+button.play {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0 auto;
+    }
+}
